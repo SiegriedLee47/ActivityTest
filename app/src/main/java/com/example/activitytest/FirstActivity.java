@@ -24,7 +24,8 @@ public class FirstActivity extends Activity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                startActivity(intent);
             }
         });
     }
