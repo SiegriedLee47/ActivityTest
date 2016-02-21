@@ -25,8 +25,9 @@ public class FirstActivity extends Activity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("http://www.baidu.com"));
+                String data = "Hello SecondActivity";
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                intent.putExtra("extra_data", data);
                 startActivity(intent);
             }
         });
