@@ -29,18 +29,18 @@ public class FirstActivity extends Activity {
         });
     }
 
-    public boolean onCreaterOpthonsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
-    public boolean onOptionsSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.add_item:
-                Toast.makeText(this, "You clicked Add", Toast.LENGTH_SHORT);
+                Toast.makeText(this, "You clicked Add", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.remove_item:
-                Toast.makeText(this, "You clicked Remove", Toast.LENGTH_SHORT);
+                Toast.makeText(this, "You clicked Remove", Toast.LENGTH_SHORT).show();
                 break;
             default:
         }
